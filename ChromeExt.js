@@ -3,9 +3,13 @@ const inputEl = document.querySelector('.input-el');
 const inputBtn = document.querySelector(".input-btn");
 const ulEl = document.querySelector('.ul-el');
 
-localStorage.clear();
-let leedsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
-console.log(leedsFromLocalStorage);
+
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+if (leadsFromLocalStorage){
+  myLeads= leadsFromLocalStorage;
+  renderLeads();
+}
+
 
 inputBtn.addEventListener('click', () => {
   
