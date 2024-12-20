@@ -5,6 +5,7 @@
   "action": {
     "default_popup": "ChromeExt.html",
     "default_icon": "leadTracker.png"
-  }
+  },
+  "permissions": ["tabs"]
 
 }
